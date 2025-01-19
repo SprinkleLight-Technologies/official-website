@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="/static/employee-css.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <img src="/static/New Logo.png" alt="Logo" class="logo">
+            <h1>Welcome, @User</h1>
+        </header>
+
+        <div class="content">
+            <div class="portal">
+                <h2>Employee Management Portal</h2>
+                <button class="click-btn" onclick="window.location.href='https://sprinklelight-technologies.bitrix24.in';">Click Here</button>
+                <p class="note">*Important: Check in using the Attendance Suite before proceeding to the Employee Management Portal.</p>
+            </div>
+
+            <div class="attendance-suite">
+                <h2>Attendance Suite</h2>
+                <div id="timer">Time: 00:00:00</div>
+                <form action="/check-in" method="POST">
+                    <button type="submit" class="attendance-btn">Check In</button>
+                </form>
+                <form action="/check-out" method="POST">
+                    <button type="submit" class="attendance-btn">Check Out</button>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <button class="logout-btn" onclick="window.location.href='/logout';">Log Out</button>
+        </footer>
+        <p class="footer-text">© 2021-2025 by SprinkleLight Technologies. All Rights Reserved.</p>
+    </div>
+
+    <script>
+        let timerElement = document.getElementById("timer");
+        let startTime = null;
+
+        if (localStorage.getItem("startTime")) {
+            startTime = new Date(localStorage.getItem("startTime"));
+            updateTimer();
+        }
+
+        function updateTimer() {
+            if (startTime) {
+                const now = new Date();
+                const elapsed = Math.floor((now - startTime) / 1000);
+                const hours = String(Math.floor(elapsed / 3600)).padStart(2, "0");
+                const minutes = String(Math.floor((elapsed % 3600) / 60)).padStart(2, "0");
+                const seconds = String(elapsed % 60).padStart(2, "0");
+                timerElement.textContent = `Time: ${hours}:${minutes}:${seconds}`;
+                setTimeout(updateTimer, 1000);
+            }
+        }
+
+        function startTimer() {
+            startTime = new Date();
+            localStorage.setItem("startTime", startTime);
+            updateTimer();
+        }
+
+        function stopTimer() {
+            localStorage.removeItem("startTime");
+            timerElement.textContent = "Time: 00:00:00";
+        }
+
+        document.querySelector("form[action='/check-in']").addEventListener("submit", startTimer);
+        document.querySelector("form[action='/check-out']").addEventListener("submit", stopTimer);
+    </script>
+</body>
+</html>
