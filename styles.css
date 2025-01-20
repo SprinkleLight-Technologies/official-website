@@ -193,3 +193,226 @@ h1 {
     font-size: 0.9rem;
     color: #666;
 }
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+  
+.why-choose-us h2 {
+    font-size: 2.5rem;
+    color: #333333;
+    margin-bottom: 30px;
+}
+  
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+  
+.feature {
+    width: 250px;
+    text-align: center;
+}
+  
+.circle {
+    border: 3px dashed #ff0000;
+    border-radius: 50%;
+    padding: 20px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+  
+.circle h3 {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+  
+.circle p {
+    font-size: 1rem;
+    color: #666666;
+}
+  
+.explore {
+    margin-top: 30px;
+}
+  
+.explore h2 {
+    font-size: 2rem;
+    color: #333333;
+}
+  
+.explore h2 span {
+    color: #ff6600;
+}
+  
+.explore p {
+    font-size: 1rem;
+    color: #666666;
+    margin: 20px 0;
+}
+  
+.instagram-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+.instagram-link img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Valued Clients Section */
+.valued-clients {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+  
+.valued-clients h2 {
+    font-size: 2.5rem;
+    color: #333333;
+    margin-bottom: 30px;
+}
+  
+.clients {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+  
+.clients img {
+    max-width: 150px;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+  
+.clients img:hover {
+    filter: grayscale(0);
+}
+  
+/* Call to Action Section */
+.cta {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+  
+.cta h2 {
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 20px;
+}
+  
+.cta p {
+    font-size: 1rem;
+    color: #666666;
+    margin-bottom: 20px;
+}
+  
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5bc0de;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+  
+.cta-button:hover {
+    background-color: #46a5c9;
+}
+  
+/* Footer Section */
+.footer {
+    background-color: #0a0227;
+    color: #ffffff;
+    padding: 50px 20px;
+}
+  
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+  
+.company-info {
+    max-width: 300px;
+}
+
+.company-info img {
+    width: 300px;
+    margin-bottom: 20px;
+}
+  
+.company-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+  
+.company-info p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+  
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.footer-links ul li {
+    margin: 10px 0;
+}
+  
+.footer-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+  
+.footer-links ul li a:hover {
+    color: #5bc0de;
+}
+  
+.social h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+  
+.social a{
+    width: 40px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+  
+.social a:hover {
+    transform: scale(1.1);
+}
+  
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+}
