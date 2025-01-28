@@ -1,36 +1,95 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #b64d4d;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
-.header {
-    background-color: #004d40;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+
+body {
+    background-color: #008080;
+    color: #333;
+    line-height: 1.6;
 }
-.header img {
-    height: 50px;
-}
-.nav {
+
+/* Header Styles */
+header {
     display: flex;
-    justify-content: center;
-    background-color: #00796b;
-    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #e0e0e0;
 }
-.nav a {
-    color: white;
+.logo {
+    width: 200px;
+    margin-right: 10px;
+}
+
+.company-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #008080;
+}
+.nav-links a {
+    background-color: rgb(255, 255, 255);   
+    color: #008080;     
+    padding: 10px 20px;     
+    border-radius: 30px;    
+    display: inline-block;   
+    text-decoration: none; 
+}
+
+
+.nav-links a:hover {
+    background-color: rgb(255, 255, 255);   
+    color: #000000;     
+    text-decoration: none;  
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
     text-decoration: none;
-    margin: 0 15px;
+    color: #008080;
     font-weight: bold;
 }
+.nav-links a.home-link {
+    color: #ffffff; /* Choose your desired color for the Home link */
+}
+.nav-links a:hover {
+    text-decoration: none;
+}
+.para{
+    text-align: center;
+    line-height: 2;
+    font-size: medium;
+    margin-bottom: 10px;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+}
 .container {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 20px auto;
-    background-color: rgb(205, 240, 48);
+    background-color: rgb(255, 255, 255);
     padding: 20px;
+    white-space: 10;
+}
+.main_cont {
+    max-width: 1100px;
+    margin: 20px auto;
+    margin-bottom: 0%;
+    background-color: rgb(255, 255, 255);
+    padding-top: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
 }
 h2 {
     color: #00796b;
