@@ -31,18 +31,6 @@ header {
     font-weight: bold;
     color: #008080;
 }
-.triangle {
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid black;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
 .nav-links a {
     background-color: rgb(255, 255, 255);   
     color: #008080;     
