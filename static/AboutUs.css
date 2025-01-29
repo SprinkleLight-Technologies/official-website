@@ -62,7 +62,7 @@ header {
     font-weight: bold;
 }
 .nav-links a.home-link {
-    color: #ffffff; /* Choose your desired color for the Home link */
+    color: #ffffff; 
 }
 .nav-links a:hover {
     text-decoration: none;
@@ -93,12 +93,15 @@ header {
     border-radius: 20px;
 }
 h2 {
+    text-align: center; 
     color: #00796b;
-    padding: 10px;
+    padding-bottom: 10px;
 }
+
 p {
     line-height: 1.6;
 }
+
 .client{
     height: 100px;
     padding: 20px;
@@ -106,10 +109,8 @@ p {
 
 .about-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 30px;
-    text-align: left;
-    flex-wrap: wrap;
 }
 
 .about-container h2 {
@@ -119,22 +120,37 @@ p {
 }
 
 .about-img {
-    display: block;
-    max-width: 100%;
-    border-radius: 10px;
+    width: 420px;  
+    height: auto;  
+    border-radius: 10px; 
 }
 
 .about-content {
-    flex: 1;
-    text-align: left; 
+    max-width: 800px;  
+    text-align: left;  
+    line-height: 1.6;
+}
+
+.para {
+    font-size: 1rem;  
+    line-height: 1.6;
+    color: #555;
 }
 
 .about-content .para {
     text-align: left;
 }
 
+.about-content-container {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px; 
+    max-width: 1200px; 
+    margin-top: 20px;
+}
+
 .msme-logo {
-    display: block;
-    max-width: 100%;
+    width: 150px;  
+    height: auto;  
     margin-top: 20px;
 }
