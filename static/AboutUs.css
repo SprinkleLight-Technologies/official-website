@@ -103,3 +103,38 @@ p {
     height: 100px;
     padding: 20px;
 }
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.about-container h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-img {
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.about-content {
+    flex: 1;
+    text-align: left; 
+}
+
+.about-content .para {
+    text-align: left;
+}
+
+.msme-logo {
+    display: block;
+    max-width: 100%;
+    margin-top: 20px;
+}
