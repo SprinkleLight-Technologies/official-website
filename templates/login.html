@@ -18,18 +18,23 @@
                 <label for="password">Password:</label>
                 <div class="password-container">
                     <input type="password" id="password" placeholder="Enter Your Password" required>
-                    <span class="show-password">
-                        <img src="eye-password-hide-svgrepo-com.svg" alt="Show Password">
+                    <span class="show-password" onclick="togglePassword()">
+                        <img id="eye-icon" src="/images/block-eye.png" alt="Show Password">
                     </span>
                 </div>
-                
+
                 <button type="submit" class="login-button">LOGIN</button>
+                <a href="register.html"><button type="button" class="signup-button">SIGN UP</button></a>
                 <a href="#" class="forgot-password">Forgot Password?</a>
+
             </form>
             <footer>
                 © 2021-2025 by SprinkleLight Technologies. All Rights Reserved.
             </footer>
         </div>
     </div>
+
+    <script src="/backend/script.js"></script>
+
 </body>
 </html>

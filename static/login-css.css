@@ -1,3 +1,4 @@
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -5,14 +6,16 @@
   font-family: 'Arial', sans-serif;
 }
 
+/* Background with Gradient */
 body {
-  background-color: #008080;
+  background: linear-gradient(135deg, #00796b, #008080);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
+/* Login Card - Glassmorphism Effect */
 .login-container {
   display: flex;
   justify-content: center;
@@ -21,25 +24,30 @@ body {
 }
 
 .login-card {
-  background-color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
   width: 400px;
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 15px;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* Logo */
 .logo {
-  width: 200px;
+  width: 150px;
   margin-bottom: 20px;
 }
 
+/* Heading */
 h2 {
   font-size: 1.5rem;
-  color: #333;
+  color: #fff;
   margin-bottom: 20px;
 }
 
+/* Form Styling */
 form {
   display: flex;
   flex-direction: column;
@@ -48,18 +56,19 @@ form {
 
 label {
   font-size: 0.9rem;
-  color: #555;
+  color: #fff;
   text-align: left;
-  margin-bottom: 5px;
 }
 
 input {
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 1rem;
+  outline: none;
 }
 
+/* Password Input with Toggle */
 .password-container {
   display: flex;
   align-items: center;
@@ -78,34 +87,52 @@ input {
 }
 
 .show-password img {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
+  filter: invert(80%);
 }
 
-.login-button {
-  background-color: #b8d8f0;
-  color: #000;
+/* Button Styling */
+.login-button, .signup-button {
+  background: linear-gradient(90deg, #4caf50, #008080);
+  color: white;
   border: none;
-  border-radius: 5px;
-  padding: 10px;
+  border-radius: 8px;
+  padding: 12px;
   font-size: 1rem;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-.login-button:hover {
-  background-color: #a0c8e0;
+.login-button:hover, .signup-button:hover {
+  background: linear-gradient(90deg, #008080, #4caf50);
 }
 
+/* Sign Up Button */
+.signup-button {
+  background: linear-gradient(90deg, #ff9800, #ff5722);
+}
+
+.signup-button:hover {
+  background: linear-gradient(90deg, #ff5722, #ff9800);
+}
+
+/* Forgot Password */
 .forgot-password {
   font-size: 0.9rem;
-  color: #008080;
+  color: #f2f2f2;
   text-decoration: none;
   margin-top: 10px;
   display: inline-block;
 }
 
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
 footer {
   margin-top: 20px;
   font-size: 0.8rem;
-  color: #666;
+  color: #ddd;
 }
