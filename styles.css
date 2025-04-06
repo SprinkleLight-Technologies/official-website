@@ -293,19 +293,31 @@ h1 {
 .clients {
     display: flex;
     justify-content: center;
-    gap: 20px;
     flex-wrap: wrap;
 }
   
 .clients img {
-    max-width: 150px;
-    height: auto;
+    max-width: 80px; 
+    height: auto; 
     filter: grayscale(100%);
     transition: filter 0.3s ease;
 }
   
 .clients img:hover {
     filter: grayscale(0);
+}
+  
+  /* Adjust spacing and size of first two logos */
+.clients img:nth-child(1), /* First logo */
+.clients img:nth-child(2) { /* Second logo */
+    margin: 0 40px; /* Increased spacing */
+    max-width: 60px; /* Reduced width */
+    height: auto; /* Maintain aspect ratio */
+}
+  
+.clients img:nth-child(3), /* Third logo */
+.clients img:nth-child(4) { /* Fourth logo */
+    margin: 0 20px; /* Original spacing */
 }
   
 /* Call to Action Section */
@@ -353,11 +365,11 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 30px;
+    gap: 50px;
 }
   
 .company-info {
-    max-width: 300px;
+    max-width: 500px;
 }
 
 .company-info img {
@@ -401,7 +413,7 @@ h1 {
 }
   
 .social a{
-    width: 40px;
+    width: 30px;
     height: 30px;
     transition: transform 0.3s ease;
 }
