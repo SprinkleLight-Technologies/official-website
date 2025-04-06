@@ -1,0 +1,138 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Background with Gradient */
+body {
+  background: linear-gradient(135deg, #00796b, #008080);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Login Card - Glassmorphism Effect */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  width: 400px;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Logo */
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+/* Heading */
+h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #fff;
+  text-align: left;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Password Input with Toggle */
+.password-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.password-container input {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.show-password {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.show-password img {
+  width: 22px;
+  height: 22px;
+  filter: invert(80%);
+}
+
+/* Button Styling */
+.login-button, .signup-button {
+  background: linear-gradient(90deg, #4caf50, #008080);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-button:hover, .signup-button:hover {
+  background: linear-gradient(90deg, #008080, #4caf50);
+}
+
+/* Sign Up Button */
+.signup-button {
+  background: linear-gradient(90deg, #ff9800, #ff5722);
+}
+
+.signup-button:hover {
+  background: linear-gradient(90deg, #ff5722, #ff9800);
+}
+
+/* Forgot Password */
+.forgot-password {
+  font-size: 0.9rem;
+  color: #f2f2f2;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #ddd;
+}
